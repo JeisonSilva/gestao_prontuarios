@@ -1,0 +1,18 @@
+{
+  "prontuarios": [
+    {
+      "re": "1",
+      "nome": "JEISON ONERES DA SILVA",
+      "favoritado": true,
+      "id": 1
+    }
+  ],
+  "favoritos": [
+    {
+      "re": "1",
+      "nome": "JEISON ONERES DA SILVA",
+      "favoritado": true,
+      "id": 1
+    }
+  ]
+}
