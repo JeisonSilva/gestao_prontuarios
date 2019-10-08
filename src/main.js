@@ -5,12 +5,16 @@ import Pesquisa from './components/Pesquisa.vue'
 import Registro from './components/Registro.vue'
 import Favorito from './components/Favorito.vue'
 
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/index.css';
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
+
 Vue.config.productionTip = false
 Vue.use(VueRouter)
-
+Vue.use(VueToast)
 
 
 const routes = [
