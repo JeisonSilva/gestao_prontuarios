@@ -1,7 +1,5 @@
 <template>
   <div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <div class="row">
         <div class="col-sm-12 col-md-10 col-sx-10">
             <div class="form-group">
@@ -44,6 +42,7 @@ import axios from 'axios'
 import Vue from 'vue';
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/index.css';
+import 'font-awesome/css/font-awesome.css'
 
 Vue.use(VueToast,{
   position: 'top'
