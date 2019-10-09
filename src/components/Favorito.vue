@@ -7,7 +7,7 @@
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">{{prontuario.nome}}</h5>
             <small>
-              <button class="btn btn-primary" v-on:click="favoritar(prontuario.re, pesquisa)">
+              <button class="btn btn-primary" v-on:click="favoritar(prontuario.re)">
                 <i  v-if="prontuario.favoritado" class="fa fa-star"></i>
                 <i  v-else class="fa fa-star-o"></i>
               </button>
@@ -26,6 +26,7 @@ import axios from 'axios'
 import Vue from 'vue';
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/index.css';
+import 'font-awesome/css/font-awesome.css'
 
 Vue.use(VueToast,{
   position: 'top'
@@ -38,11 +39,17 @@ export default {
             url_base:'http://localhost:3000'
         }
   },
-  mounted (){
-
+  created(){
+    let vm = this;
+    axios.get(`${this.url_base}/favoritos`)
+        .then(function (response) {
+          vm.prontuarios = response.data
+        })
+        .catch(function (err) {
+        })  
   },
   methods: {
-    favoritar:function (re, textoPesquisa) {              
+    favoritar:function (re) {              
             this.prontuarios.forEach(element =>{
                 if(element.re === re){
                     element.favoritado = !element.favoritado

@@ -3,16 +3,28 @@
     {
       "re": "1",
       "nome": "JEISON ONERES DA SILVA",
-      "favoritado": true,
+      "favoritado": false,
       "id": 1
+    },
+    {
+      "re": "2",
+      "nome": "PAULO SILVEIRA",
+      "favoritado": false,
+      "id": 2
+    },
+    {
+      "re": "10",
+      "nome": "FELIPE ALVES DE LIMA",
+      "favoritado": false,
+      "id": 3
     }
   ],
   "favoritos": [
     {
-      "re": "1",
-      "nome": "JEISON ONERES DA SILVA",
+      "re": "10",
+      "nome": "FELIPE ALVES DE LIMA",
       "favoritado": true,
-      "id": 1
+      "id": 3
     }
   ]
 }
